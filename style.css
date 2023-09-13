@@ -1,0 +1,82 @@
+.rotate-image {
+    transform: rotate(0deg);
+    animation: rotate 30s linear infinite;
+    max-width: 20%;
+    padding: 32px;
+    bottom: 100px;
+    left: 48px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'cursive', 'Lucida Sans';
+    box-sizing: border-box;
+}
+
+body{background: url(KAZU.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: absolute;}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    position: relative;
+    right: 175px;
+}
+
+.calculator{
+    background: #e957449f;
+    padding: 20px;
+    border-radius: 40px;
+    border-color: #9c2929;
+    box-shadow: -8px -8px 15px rgba(121, 49, 40, 0.705), 5px 5px 15px rgba(121, 49, 40, 0.705);
+    position: absolute;
+}
+
+.calculator form input{
+    opacity: 100%;
+    border: 0.4;
+    border-color: #af123441;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(248, 134, 134, 0.226), 5px 5px 15px rgba(170, 55, 35, 0.555);
+    background-color: #cf31465e;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 4.3px;
+    position: sticky;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 25px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 116px;
+}
